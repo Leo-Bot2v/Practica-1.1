@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+
+{% block titulo %}Contrátame — Ingeniero{% endblock %}
+
+{% block contenido %}
+
+<div class="seccion">
+  {% if seccion == "habilidades" %}
+    {% include "partes/habilidades.html" %}
+  {% elif seccion == "experiencia" %}
+    {% include "partes/experiencia.html" %}
+  {% elif seccion == "contacto" %}
+    {% include "partes/contacto.html" %}
+  {% endif %}
+</div>
+{% endblock %}
